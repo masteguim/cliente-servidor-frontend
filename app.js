@@ -1,4 +1,4 @@
-const API = "https://backendclienteserv-hccwedbrf4fkejek.chilecentral-01.azurewebsites.net/";
+const API = "https://backendclienteserv-hccwedbrf4fkejek.chilecentral-01.azurewebsites.net/api";
 const mensagem = document.querySelector("#mensagem");
 let paginaAtual = "livros";
 

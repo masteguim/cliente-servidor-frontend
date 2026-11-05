@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Livraria</title>
+  <link rel="stylesheet" href="estilo.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header><h1>Livraria</h1><p>Catálogo, carrinho, favoritos e reservas</p></header>
+  <nav aria-label="Menu principal">
+    <button data-pagina="livros" class="ativo">Livros</button>
+    <button data-pagina="carrinho">Carrinho</button>
+    <button data-pagina="favoritos">Favoritos</button>
+    <button data-pagina="reservas">Reservas</button>
+  </nav>
+  <main>
+    <p id="mensagem" role="status" aria-live="polite"></p>
+    <section id="livros" class="pagina">
+      <h2>Livros</h2>
+      <form id="form-livro" class="linha"><input name="titulo" placeholder="Título" aria-label="Título" required><input name="autor" placeholder="Autor" aria-label="Autor" required><button type="submit">Cadastrar livro</button></form>
+      <form id="form-busca" class="linha"><input id="busca" placeholder="Buscar por título ou autor" aria-label="Buscar livros"><button type="submit">Buscar</button></form>
+      <div id="lista-livros"></div>
+    </section>
+    <section id="carrinho" class="pagina" hidden><h2>Carrinho</h2><div id="lista-carrinho"></div></section>
+    <section id="favoritos" class="pagina" hidden><h2>Favoritos</h2><div id="lista-favoritos"></div></section>
+    <section id="reservas" class="pagina" hidden>
+      <h2>Reservas</h2>
+      <form id="form-reserva" class="linha"><input name="nome" placeholder="Seu nome" aria-label="Seu nome" required><select name="livro_id" id="livro-reserva" aria-label="Livro para reservar" required></select><button type="submit">Reservar</button></form>
+      <div id="lista-reservas"></div>
+    </section>
+  </main>
+  <footer>Atividade 8.5 — Arquitetura Cliente-Servidor</footer>
+</body>
+</html>

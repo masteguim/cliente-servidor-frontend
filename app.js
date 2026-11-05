@@ -1,4 +1,4 @@
-const API = "http://127.0.0.1:5000/api";
+const API = "https://backendclienteserv-hccwedbrf4fkejek.chilecentral-01.azurewebsites.net/";
 const mensagem = document.querySelector("#mensagem");
 let paginaAtual = "livros";
 
